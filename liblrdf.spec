@@ -11,6 +11,7 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libraptor-devel >= 0.9.11
 BuildRequires:	libtool
+BuildRequires:	ladspa-devel
 Requires:	ladspa-common
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
