@@ -1,17 +1,18 @@
 Summary:	Library to manipulate RDF files describing LADSPA plugins
 Summary(pl):	Biblioteka do przetwarzania plików RDF opisuj±cych wtyczki LADSPA
 Name:		liblrdf
-Version:	0.3.2
+Version:	0.3.4
 Release:	1
 License:	GPL
 Group:		Libraries
 Source0:	http://plugin.org.uk/lrdf/%{name}-%{version}.tar.gz
-# Source0-md5:	6aea65406c9bf9aaeda7e30cc43ece8b
+# Source0-md5:	ebff54c723563761587c830a9c962fff
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libraptor-devel >= 0.9.11
 BuildRequires:	libtool
 BuildRequires:	ladspa-devel
+BuildRequires:	pkgconfig
 Requires:	ladspa-common
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
