@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Libraries
 Source0:	http://plugin.org.uk/lrdf/%{name}-%{version}.tar.gz
+# Source0-md5:	b09f8e3e7f099a00bac1164f25b84b28
 BuildRequires:	libraptor-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
