@@ -9,7 +9,7 @@ Source0:	http://plugin.org.uk/lrdf/%{name}-%{version}.tar.gz
 # Source0-md5:	6aea65406c9bf9aaeda7e30cc43ece8b
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	libraptor-devel
+BuildRequires:	libraptor-devel >= 0.9.11
 BuildRequires:	libtool
 Requires:	ladspa-common
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
