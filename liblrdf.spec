@@ -7,6 +7,7 @@ License:	GPL
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/lrdf/%{name}-%{version}.tar.gz
 # Source0-md5:	327a5674f671c4b360c6353800226877
+URL:		http://sourceforge.net/projects/lrdf/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libraptor-devel >= 0.9.11
