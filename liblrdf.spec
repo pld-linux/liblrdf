@@ -32,7 +32,7 @@ Summary:	liblrdf header files
 Summary(pl):	Pliki nag³ówkowe liblrdf
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:   libraptor-devel >= 0.9.11
+Requires:	libraptor-devel >= 0.9.11
 
 %description devel
 liblrdf library header files.
