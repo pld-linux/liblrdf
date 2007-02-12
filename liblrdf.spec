@@ -1,5 +1,5 @@
 Summary:	Library to manipulate RDF files describing LADSPA plugins
-Summary(pl):	Biblioteka do przetwarzania plikÛw RDF opisuj±cych wtyczki LADSPA
+Summary(pl.UTF-8):   Biblioteka do przetwarzania plik√≥w RDF opisujƒÖcych wtyczki LADSPA
 Name:		liblrdf
 Version:	0.4.0
 Release:	2
@@ -22,15 +22,15 @@ This is a library to make it easy to manipulate RDF files describing
 LADSPA plugins. It can also be used for general RDF manipulation. It
 can read RDF/XML and N3 files and export N3 files.
 
-%description -l pl
-Ta biblioteka powsta≥a, aby u≥atwiÊ przetwarzanie plikÛw RDF
-opisuj±cych wtyczki LADSPA. Moøe byÊ uøywana takøe do ogÛlnego
-przetwarzania RDF. Jest w stanie czytaÊ pliki RDF/XML i N3 oraz
-eksportowaÊ do plikÛw N3.
+%description -l pl.UTF-8
+Ta biblioteka powsta≈Ça, aby u≈Çatwiƒá przetwarzanie plik√≥w RDF
+opisujƒÖcych wtyczki LADSPA. Mo≈ºe byƒá u≈ºywana tak≈ºe do og√≥lnego
+przetwarzania RDF. Jest w stanie czytaƒá pliki RDF/XML i N3 oraz
+eksportowaƒá do plik√≥w N3.
 
 %package devel
 Summary:	liblrdf header files
-Summary(pl):	Pliki nag≥Ûwkowe liblrdf
+Summary(pl.UTF-8):   Pliki nag≈Ç√≥wkowe liblrdf
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	libraptor-devel >= 0.9.11
@@ -38,19 +38,19 @@ Requires:	libraptor-devel >= 0.9.11
 %description devel
 liblrdf library header files.
 
-%description devel -l pl
-Pliki nag≥Ûwkowe biblioteki liblrdf.
+%description devel -l pl.UTF-8
+Pliki nag≈Ç√≥wkowe biblioteki liblrdf.
 
 %package static
 Summary:	Static liblrdf library
-Summary(pl):	Statyczna biblioteka liblrdf
+Summary(pl.UTF-8):   Statyczna biblioteka liblrdf
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static liblrdf library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka liblrdf.
 
 %prep
