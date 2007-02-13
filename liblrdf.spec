@@ -1,5 +1,5 @@
 Summary:	Library to manipulate RDF files describing LADSPA plugins
-Summary(pl.UTF-8):   Biblioteka do przetwarzania plików RDF opisujących wtyczki LADSPA
+Summary(pl.UTF-8):	Biblioteka do przetwarzania plików RDF opisujących wtyczki LADSPA
 Name:		liblrdf
 Version:	0.4.0
 Release:	2
@@ -30,7 +30,7 @@ eksportować do plików N3.
 
 %package devel
 Summary:	liblrdf header files
-Summary(pl.UTF-8):   Pliki nagłówkowe liblrdf
+Summary(pl.UTF-8):	Pliki nagłówkowe liblrdf
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	libraptor-devel >= 0.9.11
@@ -43,7 +43,7 @@ Pliki nagłówkowe biblioteki liblrdf.
 
 %package static
 Summary:	Static liblrdf library
-Summary(pl.UTF-8):   Statyczna biblioteka liblrdf
+Summary(pl.UTF-8):	Statyczna biblioteka liblrdf
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
