@@ -3,12 +3,12 @@ Summary(pl.UTF-8):	Biblioteka do przetwarzania plików RDF opisujących wtyczki 
 Name:		liblrdf
 Version:	0.4.0
 Release:	4
-License:	GPL
+License:	GPL v2+
 Group:		Libraries
-Source0:	http://dl.sourceforge.net/lrdf/%{name}-%{version}.tar.gz
+Source0:	http://downloads.sourceforge.net/lrdf/%{name}-%{version}.tar.gz
 # Source0-md5:	327a5674f671c4b360c6353800226877
 URL:		http://sourceforge.net/projects/lrdf/
-BuildRequires:	autoconf
+BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
 BuildRequires:	libraptor-devel >= 0.9.11
 BuildRequires:	libtool
@@ -81,16 +81,17 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog README
-%attr(755,root,root) %{_libdir}/lib*.so.*.*.*
+%attr(755,root,root) %{_libdir}/liblrdf.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/liblrdf.so.2
 %{_datadir}/ladspa/rdf/ladspa.rdfs
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/lib*.so
-%{_libdir}/lib*.la
-%{_includedir}/*.h
-%{_pkgconfigdir}/*.pc
+%attr(755,root,root) %{_libdir}/liblrdf.so
+%{_libdir}/liblrdf.la
+%{_includedir}/lrdf*.h
+%{_pkgconfigdir}/lrdf.pc
 
 %files static
 %defattr(644,root,root,755)
-%{_libdir}/lib*.a
+%{_libdir}/liblrdf.a
