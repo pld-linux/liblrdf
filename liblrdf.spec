@@ -2,7 +2,7 @@ Summary:	Library to manipulate RDF files describing LADSPA plugins
 Summary(pl.UTF-8):	Biblioteka do przetwarzania plików RDF opisujących wtyczki LADSPA
 Name:		liblrdf
 Version:	0.4.0
-Release:	5
+Release:	6
 License:	GPL v2+
 Group:		Libraries
 Source0:	http://downloads.sourceforge.net/lrdf/%{name}-%{version}.tar.gz
