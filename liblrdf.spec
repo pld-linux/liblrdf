@@ -1,18 +1,20 @@
 Summary:	Library to manipulate RDF files describing LADSPA plugins
 Summary(pl.UTF-8):	Biblioteka do przetwarzania plików RDF opisujących wtyczki LADSPA
 Name:		liblrdf
-Version:	0.4.0
-Release:	6
+Version:	0.5.0
+Release:	1
 License:	GPL v2+
 Group:		Libraries
-Source0:	http://downloads.sourceforge.net/lrdf/%{name}-%{version}.tar.gz
-# Source0-md5:	327a5674f671c4b360c6353800226877
+#Source0Download: https://github.com/swh/LRDF/releases
+Source0:	https://github.com/swh/LRDF/archive/%{version}/%{name}-%{version}.tar.gz
+# Source0-md5:	d7f2ed56eac839cf5bf72e6a93e9a464
 URL:		http://sourceforge.net/projects/lrdf/
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
-BuildRequires:	libraptor-devel >= 0.9.11
+BuildRequires:	libraptor2-devel >= 2.0.0
 BuildRequires:	libtool
 BuildRequires:	ladspa-devel
+BuildRequires:	openssl-devel
 BuildRequires:	pkgconfig
 Requires:	ladspa-common
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -33,7 +35,7 @@ Summary:	liblrdf header files
 Summary(pl.UTF-8):	Pliki nagłówkowe liblrdf
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	libraptor-devel >= 0.9.11
+Requires:	libraptor2-devel >= 2.0.0
 
 %description devel
 liblrdf library header files.
@@ -54,7 +56,7 @@ Static liblrdf library.
 Statyczna biblioteka liblrdf.
 
 %prep
-%setup -q
+%setup -q -n LRDF-%{version}
 
 %build
 %{__libtoolize}
